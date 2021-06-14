@@ -220,12 +220,6 @@
                             <constraint firstItem="IZn-Iq-T5p" firstAttribute="centerY" secondItem="nVg-r7-sfd" secondAttribute="centerY" constant="20" id="z9H-eZ-Iju"/>
                             <constraint firstItem="Psk-hy-58o" firstAttribute="centerY" secondItem="nVg-r7-sfd" secondAttribute="centerY" constant="32" id="zLn-XG-6d4"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="Psk-hy-58o"/>
-                                <exclude reference="Xz3-NV-n8R"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Вопрос №" id="je4-Ub-ksF"/>
                     <connections>
