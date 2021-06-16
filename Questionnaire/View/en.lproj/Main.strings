@@ -1,0 +1,69 @@
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "2IN-DQ-qlH"; */
+"2IN-DQ-qlH.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "2Oy-DR-JIC"; */
+"2Oy-DR-JIC.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "2rI-yP-DcO"; */
+"2rI-yP-DcO.text" = "Label";
+
+/* Class = "UINavigationItem"; title = "Результат"; ObjectID = "60H-eo-K7v"; */
+"60H-eo-K7v.title" = "Результат";
+
+/* Class = "UIButton"; normalTitle = "Ответить"; ObjectID = "6Qn-pp-uvl"; */
+"6Qn-pp-uvl.normalTitle" = "Ответить";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "9GG-PB-Mav"; */
+"9GG-PB-Mav.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Dn8-4l-pUO"; */
+"Dn8-4l-pUO.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "HGn-DQ-UGR"; */
+"HGn-DQ-UGR.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "KNd-BF-kj2"; */
+"KNd-BF-kj2.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Oog-wh-ifU"; */
+"Oog-wh-ifU.text" = "Label";
+
+/* Class = "UILabel"; text = "Какое вы живтное?"; ObjectID = "RG6-Mh-Ffg"; */
+"RG6-Mh-Ffg.text" = "Какое вы живтное?";
+
+/* Class = "UILabel"; text = "Вы - 🐶!"; ObjectID = "RrE-xr-4QY"; */
+"RrE-xr-4QY.text" = "Вы - 🐶!";
+
+/* Class = "UILabel"; text = "🐰"; ObjectID = "Rzj-Y5-gdZ"; */
+"Rzj-Y5-gdZ.text" = "🐰";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "XNX-ce-2lv"; */
+"XNX-ce-2lv.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "🐱"; ObjectID = "ZNp-NH-9DW"; */
+"ZNp-NH-9DW.text" = "🐱";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "alA-tq-PjV"; */
+"alA-tq-PjV.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "🐢"; ObjectID = "cjQ-tC-VzR"; */
+"cjQ-tC-VzR.text" = "🐢";
+
+/* Class = "UIButton"; normalTitle = "Ответить"; ObjectID = "eft-oP-JOd"; */
+"eft-oP-JOd.normalTitle" = "Ответить";
+
+/* Class = "UIButton"; normalTitle = "Начать опрос"; ObjectID = "i1d-Hz-LPG"; */
+"i1d-Hz-LPG.normalTitle" = "Начать опрос";
+
+/* Class = "UINavigationItem"; title = "Вопрос №"; ObjectID = "je4-Ub-ksF"; */
+"je4-Ub-ksF.title" = "Вопрос №";
+
+/* Class = "UILabel"; text = "Вам нравиться быть с друзьями. Вы окружайете себя людьми, которые вам нравяться и всегда готовы вам помочь"; ObjectID = "nbC-wM-eTf"; */
+"nbC-wM-eTf.text" = "Вам нравиться быть с друзьями. Вы окружайете себя людьми, которые вам нравяться и всегда готовы вам помочь";
+
+/* Class = "UILabel"; text = "🐶"; ObjectID = "pjW-Hi-kdg"; */
+"pjW-Hi-kdg.text" = "🐶";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "vsb-F5-T6p"; */
+"vsb-F5-T6p.text" = "Label";

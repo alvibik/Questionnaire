@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:/Users/albik/Developer/swiftBook/Lesson 4/Questionnaire/Questionnaire.xcodeproj">
+      location = "self:..">
    </FileRef>
 </Workspace>

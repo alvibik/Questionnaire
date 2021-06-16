@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Introduction View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Questionnaire" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="IntroductionViewController" customModule="Questionnaire" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -84,7 +84,7 @@
         <!--Вопрос №-->
         <scene sceneID="FC1-83-fSr">
             <objects>
-                <viewController id="vf2-Jy-qJ7" sceneMemberID="viewController">
+                <viewController id="vf2-Jy-qJ7" customClass="QuestionViewController" customModule="Questionnaire" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nVg-r7-sfd">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -206,6 +206,15 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9GG-PB-Mav">
+                                <rect key="frame" x="20" y="111" width="280" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Inn-Yb-5q9">
+                                <rect key="frame" x="0.0" y="103" width="320" height="4"/>
+                            </progressView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="LdH-Sh-cjT"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -213,16 +222,44 @@
                             <constraint firstItem="LdH-Sh-cjT" firstAttribute="trailing" secondItem="IZn-Iq-T5p" secondAttribute="trailing" constant="20" id="3Yt-uX-aDe"/>
                             <constraint firstItem="Xz3-NV-n8R" firstAttribute="centerY" secondItem="nVg-r7-sfd" secondAttribute="centerY" constant="32" id="6da-40-9w7"/>
                             <constraint firstItem="IZn-Iq-T5p" firstAttribute="leading" secondItem="LdH-Sh-cjT" secondAttribute="leading" constant="20" id="Cd0-RC-WZK"/>
+                            <constraint firstItem="9GG-PB-Mav" firstAttribute="leading" secondItem="LdH-Sh-cjT" secondAttribute="leading" constant="20" id="GO6-QR-yBb"/>
                             <constraint firstItem="Psk-hy-58o" firstAttribute="leading" secondItem="LdH-Sh-cjT" secondAttribute="leading" constant="20" id="KQL-ro-uhZ"/>
+                            <constraint firstItem="Inn-Yb-5q9" firstAttribute="trailing" secondItem="LdH-Sh-cjT" secondAttribute="trailing" id="OJL-Dn-WjD"/>
+                            <constraint firstItem="Inn-Yb-5q9" firstAttribute="leading" secondItem="LdH-Sh-cjT" secondAttribute="leading" id="WUI-up-uwX"/>
+                            <constraint firstItem="LdH-Sh-cjT" firstAttribute="trailing" secondItem="9GG-PB-Mav" secondAttribute="trailing" constant="20" id="XUM-Ad-lx6"/>
                             <constraint firstItem="LdH-Sh-cjT" firstAttribute="trailing" secondItem="Psk-hy-58o" secondAttribute="trailing" constant="20" id="dGT-fd-kVI"/>
+                            <constraint firstItem="9GG-PB-Mav" firstAttribute="top" secondItem="LdH-Sh-cjT" secondAttribute="top" constant="8" id="dU3-sQ-NNG"/>
                             <constraint firstItem="Xz3-NV-n8R" firstAttribute="leading" secondItem="LdH-Sh-cjT" secondAttribute="leading" constant="20" id="lKi-pg-G7h"/>
+                            <constraint firstItem="Inn-Yb-5q9" firstAttribute="top" secondItem="LdH-Sh-cjT" secondAttribute="top" id="n8f-Vv-5iU"/>
                             <constraint firstItem="LdH-Sh-cjT" firstAttribute="trailing" secondItem="Xz3-NV-n8R" secondAttribute="trailing" constant="20" id="uAW-we-9BQ"/>
+                            <constraint firstItem="Inn-Yb-5q9" firstAttribute="leading" secondItem="LdH-Sh-cjT" secondAttribute="leading" id="uPi-dO-8sv"/>
+                            <constraint firstItem="LdH-Sh-cjT" firstAttribute="trailing" secondItem="Inn-Yb-5q9" secondAttribute="trailing" id="uvH-lE-BEB"/>
                             <constraint firstItem="IZn-Iq-T5p" firstAttribute="centerY" secondItem="nVg-r7-sfd" secondAttribute="centerY" constant="20" id="z9H-eZ-Iju"/>
                             <constraint firstItem="Psk-hy-58o" firstAttribute="centerY" secondItem="nVg-r7-sfd" secondAttribute="centerY" constant="32" id="zLn-XG-6d4"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Вопрос №" id="je4-Ub-ksF"/>
                     <connections>
+                        <outlet property="multipleStackView" destination="IZn-Iq-T5p" id="Vmm-WF-Mii"/>
+                        <outlet property="questionLabel" destination="9GG-PB-Mav" id="kf4-Ob-h7y"/>
+                        <outlet property="questionProgressView" destination="Inn-Yb-5q9" id="55s-RC-S8L"/>
+                        <outlet property="rangedSlider" destination="duw-Yz-wVl" id="6nh-7Y-OcD"/>
+                        <outlet property="rangedStackView" destination="Xz3-NV-n8R" id="BnB-KO-yWv"/>
+                        <outlet property="singleStackView" destination="Psk-hy-58o" id="xAY-3S-1Z0"/>
+                        <outletCollection property="singleButtons" destination="XNX-ce-2lv" collectionClass="NSMutableArray" id="wee-tD-0ZN"/>
+                        <outletCollection property="singleButtons" destination="alA-tq-PjV" collectionClass="NSMutableArray" id="Gh8-Mw-40z"/>
+                        <outletCollection property="singleButtons" destination="KNd-BF-kj2" collectionClass="NSMutableArray" id="NgK-SQ-GCj"/>
+                        <outletCollection property="singleButtons" destination="2Oy-DR-JIC" collectionClass="NSMutableArray" id="c2u-yc-SlE"/>
+                        <outletCollection property="multipleLabels" destination="vsb-F5-T6p" collectionClass="NSMutableArray" id="e8E-l9-Pin"/>
+                        <outletCollection property="multipleLabels" destination="2rI-yP-DcO" collectionClass="NSMutableArray" id="u2S-Ec-Wan"/>
+                        <outletCollection property="multipleLabels" destination="Dn8-4l-pUO" collectionClass="NSMutableArray" id="Pu0-na-puj"/>
+                        <outletCollection property="multipleLabels" destination="Oog-wh-ifU" collectionClass="NSMutableArray" id="ex6-dr-5mQ"/>
+                        <outletCollection property="multipleSwitches" destination="aNM-QW-Mov" collectionClass="NSMutableArray" id="eaz-Tr-IXn"/>
+                        <outletCollection property="multipleSwitches" destination="vUJ-vh-gMt" collectionClass="NSMutableArray" id="zdK-O6-juF"/>
+                        <outletCollection property="multipleSwitches" destination="Kaz-kq-bIs" collectionClass="NSMutableArray" id="jaL-3j-LNr"/>
+                        <outletCollection property="multipleSwitches" destination="z1e-md-DbL" collectionClass="NSMutableArray" id="Pl1-Xy-x2y"/>
+                        <outletCollection property="rangedLabels" destination="HGn-DQ-UGR" collectionClass="NSMutableArray" id="JHe-gt-c6r"/>
+                        <outletCollection property="rangedLabels" destination="2IN-DQ-qlH" collectionClass="NSMutableArray" id="a7k-Qf-7hK"/>
                         <segue destination="d6w-MQ-iqS" kind="show" identifier="resultSegue" id="Zi0-M7-lxy"/>
                     </connections>
                 </viewController>
@@ -233,7 +270,7 @@
         <!--Результат-->
         <scene sceneID="Tiq-uF-zrq">
             <objects>
-                <viewController id="d6w-MQ-iqS" sceneMemberID="viewController">
+                <viewController id="d6w-MQ-iqS" customClass="ResultViewController" customModule="Questionnaire" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vGl-od-RLe">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -241,7 +278,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="b5G-mf-c7x">
                                 <rect key="frame" x="20" y="231.5" width="280" height="149.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вы - 🐶!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RrE-xr-4QY">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вы - 🐶!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RrE-xr-4QY">
                                         <rect key="frame" x="0.0" y="0.0" width="280" height="60"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                         <nil key="textColor"/>
@@ -265,10 +302,15 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Результат" id="60H-eo-K7v">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="Utr-ZF-35G"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="Utr-ZF-35G">
+                            <connections>
+                                <segue destination="Umr-iD-os1" kind="unwind" unwindAction="unwindSegue:" id="GuB-HU-4cu"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VRt-4D-f93" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Umr-iD-os1" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1688" y="-63"/>
         </scene>
